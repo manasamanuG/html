@@ -3,45 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developed By Manasa</title>
+    <title>Under Maintenance</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f06, #4a90e2);
-            color: #fff;
-            text-align: center;
-            height: 100vh;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Impact', sans-serif;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            color: white;
         }
-        header {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-        }
-        main {
-            font-size: 1.5em;
-            margin-bottom: 40px;
-        }
-        footer {
-            font-size: 1em;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            width: 100%;
+
+        .background-video {
             position: absolute;
-            bottom: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Prevent interaction with the video */
+        }
+
+        .overlay-text {
+            position: relative;
+            z-index: 1;
+            font-size: 48px;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>Page Created Successfully</header>
-    <main>
-        <p>Developed By Manasa</p>
-    </main>
+    <div class="overlay-text">This Site Is Under Maintenance</div>
+
+    <iframe class="background-video" src="https://www.youtube.com/embed/wLd3dfix2B8?autoplay=1&mute=1&loop=1&playlist=wLd3dfix2B8&controls=0&modestbranding=1&showinfo=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </body>
 </html>
